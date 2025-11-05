@@ -89,7 +89,7 @@ void tokenize_company(string s,vector<Company> &data){
     //Read the file of jobs
     vector <Job> jobs;
     fstream fin2;
-    fin2.open("../data/Job.csv");
+    fin2.open("../data/Job.txt");
     while(!fin2.eof()){
         fin2>>intermediate;
         tokenize_job(intermediate,jobs);
@@ -98,7 +98,7 @@ void tokenize_company(string s,vector<Company> &data){
 
     //Read the file of internships
     vector <Internship> internships;
-    fin2.open("../data/Internship.csv");
+    fin2.open("../data/Internship.txt");
     while(!fin2.eof()){
         fin2>>intermediate;
         tokenize_internship(intermediate,internships);
@@ -136,7 +136,7 @@ void read_file(vector<Student> &students,vector<Company> &companies,vector<Colle
     string line;
 
     //Read data of students
-    fin.open("../data/Student.csv");
+    fin.open("../data/Student.txt");
     while(!fin.eof()){
         fin>>line;
         tokenize_student(line,students);
@@ -144,7 +144,7 @@ void read_file(vector<Student> &students,vector<Company> &companies,vector<Colle
     fin.close();
 
     //Read data of companies
-    fin.open("../data/Company.csv");
+    fin.open("../data/Company.txt");
     while(!fin.eof()){
         fin>>line;
         tokenize_company(line,companies);
@@ -152,7 +152,7 @@ void read_file(vector<Student> &students,vector<Company> &companies,vector<Colle
     fin.close();
 
     //Read data of colleges
-    fin.open("../data/College.csv");
+    fin.open("../data/College.txt");
     while(getline(fin, line)){
         if (!line.empty()) {
             tokenize_college(line,colleges);
