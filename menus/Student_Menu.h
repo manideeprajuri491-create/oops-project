@@ -41,8 +41,6 @@ void offer_menu(vector<Company> &Companies){
         cout<<Companies[selected_company-1];
         cout<<endl;
 
-        //Display job or internship for selected company
-        //based on the selected option
         switch(offer){
             case 1: 
                 Companies[selected_company - 1].display_job();

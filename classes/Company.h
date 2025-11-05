@@ -12,7 +12,6 @@ class Company
 protected:
     string company_name;
     string company_location;
-    /*Branch here shows which branch of collegee will company target Eg: Mech, Elec, CSE*/
     string company_branch;
     int total_offers;
     vector<Job> jobs;

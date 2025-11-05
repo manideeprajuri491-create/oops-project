@@ -1,4 +1,3 @@
-// College (name, location,(inherit->>placements),students)
 #ifndef COLLEGE_H
 #define COLLEGE_H
 #include <iostream>
@@ -29,13 +28,6 @@ public:
             placements.push_back(Placement(2019,11,50,160,180)); 
             placements.push_back(Placement(2020,10,42,190,250)); 
     }
-        // void initialise_companies(vector <string> &college_companies) {
-        //     college_companies.push_back("Google"); 
-        //     college_companies.push_back("RedHat"); 
-        //     college_companies.push_back("Uber"); 
-        //     college_companies.push_back("IBM"); 
-        //     college_companies.push_back("Flipkart");
-        // }
         void initialise_placements(vector <Placement> &placements) {
             placements.push_back(Placement(2018,10,42,1950,2000)); 
             placements.push_back(Placement(2019,11,50,1700,1800)); 
@@ -161,7 +153,6 @@ public:
 
     void placement_history()
     {
-        //initialise_placements(placements);
         sort(placements.begin(), placements.end(), less_than_key());
         cout<<endl<<"\t\t\t\t\t      || PLACEMENT HISTORY ||\n"<<endl;
                 cout<<"\t======================================================================================================================"<<endl<<endl;
@@ -186,7 +177,6 @@ public:
 
 ostream& operator<<(ostream&out,College& college){
     cout<<"\t\t\t\t\t   || COLLEGE DETAILS ||"<<endl;
-    // college.initialise_companies(college.college_companies);
     out<<"  Serial No."<<college.index++<<endl;
     out<<"  College Name: "<<college.college_name<<endl;
     out<<"  Location: "<<college.college_location<<endl;

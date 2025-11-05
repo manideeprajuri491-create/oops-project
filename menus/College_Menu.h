@@ -14,7 +14,7 @@ void College_Menu(vector<College> &Colleges)
         display_college_list(Colleges);
         cout<<"Enter the serial number of your college: ";
         cin>>college_index;
-        college_index--; // adjust for 0-based index
+        college_index--; 
         cout<<endl;
     }
     cout<<Colleges[college_index];

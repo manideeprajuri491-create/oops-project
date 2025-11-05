@@ -78,8 +78,6 @@ void Company_Details_Menu(vector<Company> &Companies,vector<College> &Colleges){
         cout<<"Choose the number of what you want to see/edit:"<<endl;
         cout<<"1.Jobs\n2.Internships\n3.Return to previous menu\n4.Exit\n->";
         cin>>offer;
-        //Display job or internship for selected company
-        //based on the selected option
         switch(offer){
             case 1: 
                 int choice, owner;
